@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roundcornersback"
+    tools:context=".selection">
+    android:layout_marginStart="15dp"
+
+    <TextView
+        android:id="@+id/background_select"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+
+        android:id="@+id/downmenu_select"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:elevation="1dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/gruppabutonselection"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_group1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/mainbuttononselection"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_home1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/settingsbuttonselection"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_settings1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonbak"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="#DDDDDD"
+
+        android:fontFamily="@font/menloregular"
+        android:text="Бакалавриат"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnercursa"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/whitebackround"
+        android:theme="@style/SpinnerTheme"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonmag"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonmag"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="215dp"
+
+        android:backgroundTint="#DDDDDD"
+        android:fontFamily="@font/menloregular"
+        android:text="Магистратура"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/continueselect"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="128dp"
+        android:backgroundTint="#DDDDDD"
+
+        android:fontFamily="@font/menloregular"
+        android:text="Продолжить"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnercursa" />
+
+    <TextView
+        android:id="@+id/nomercursatext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="254dp"
+        android:fontFamily="@font/menloregular"
+        android:text="Курс"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonmag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

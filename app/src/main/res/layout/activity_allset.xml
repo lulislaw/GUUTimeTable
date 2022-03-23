@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".allset">
+
+    <TextView
+        android:id="@+id/backgroundallset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+
+        android:id="@+id/downmenu_allset"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:elevation="1dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/gruppabutonallset"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_group1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/mainbuttononallset"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_home1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/settingsbuttonallset"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_settings1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_tems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="Темы"
+        app:layout_constraintBottom_toTopOf="@+id/backforthemes"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/backforthemes"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/classicstyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0" />
+
+        <Button
+            android:id="@+id/darkstyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:backgroundTint="@color/dark" />
+
+        <Button
+            android:id="@+id/pinkstyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:backgroundTint="@color/pink" />
+
+        <Button
+            android:id="@+id/bluestyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:backgroundTint="@color/blue" />
+
+        <Button
+            android:id="@+id/whiteredstyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:backgroundTint="@color/redwhite" />
+
+        <Button
+            android:id="@+id/darkredstyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:backgroundTint="@color/reddark" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

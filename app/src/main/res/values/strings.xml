@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SMU</string>
+
+
+    <string name="Empty">Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text Example Text </string>
+    <string name="Monday">Понедельник</string>
+    <string name="Tuesday">Вторник</string>
+    <string name="Wednesday">Среда</string>
+    <string name="Thursday">Четверг</string>
+    <string name="Friday">Пятница</string>
+    <string name="Saturday">Суббота</string>
+
+
+</resources>

@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constanback"
+    style="@style/Theme.GUUTimeTable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:scrollbars="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/setweek"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0"
+        android:background="@color/alpha"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toTopOf="@id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icon_week1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:id="@+id/setbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:elevation="1dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/gruppam"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_group1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/todaybutton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_home1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/settingsall"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="10dp"
+
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_settings1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nameofgroup"
+        android:layout_width="175dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/menloregular"
+        android:gravity="bottom|left"
+        android:textColor="#252121"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="50dp"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/setbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Day1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center"
+                android:text="@string/Monday"
+                android:textColor="#252121"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/group1_1_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+
+                android:layout_marginTop="2dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+
+                android:textSize="13sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group1_2_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group1_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+
+                android:textSize="13sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group1_4_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/Day2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center"
+                android:text="@string/Tuesday"
+                android:textColor="#252121"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/group2_1_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+
+                android:textSize="13sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group2_2_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group2_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group2_4_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/Day3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center"
+                android:text="@string/Wednesday"
+                android:textColor="#252121"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/group3_1_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+
+                android:textSize="13sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group3_2_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group3_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group3_4_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/Day4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center"
+                android:text="@string/Thursday"
+                android:textColor="#252121"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/group4_1_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+
+                android:textSize="13sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group4_2_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group4_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group4_4_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/Day5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center"
+                android:text="@string/Friday"
+                android:textColor="#252121"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/group5_1_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+
+                android:textSize="13sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group5_2_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group5_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group5_4_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/Day6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center"
+                android:text="@string/Saturday"
+                android:textColor="#252121"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/group6_1_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+
+                android:textSize="13sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group6_2_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group6_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+                android:textSize="13sp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+            <TextView
+                android:id="@+id/group6_4_1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundcorners"
+                android:fontFamily="@font/menloregular"
+                android:gravity="center|top"
+                android:text="@string/Empty"
+                android:textColor="#252121"
+
+                android:textSize="13sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="31dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:indeterminateDrawable="@drawable/barstyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nowweek"
+        android:layout_width="175dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="-50dp"
+        android:fontFamily="@font/menloregular"
+        android:gravity="bottom|right"
+        android:text="Текущая неделя..."
+        android:textColor="#252121"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/nedelya"
+        app:layout_constraintEnd_toStartOf="@id/setweek" />
+
+    <TextView
+        android:id="@+id/nedelya"
+        android:layout_width="175dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="-50dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/menloregular"
+        android:gravity="right|top"
+        android:text="Неделя..."
+        android:textColor="#252121"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@id/setweek" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
