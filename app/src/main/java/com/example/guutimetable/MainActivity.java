@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     AsyncHttpClient client;                 //Клиент для подключения к гиту
     Workbook workbook;                      //Книга эксель
 
-
+    private Cell asdfasdfasdf;
     private final static String FILE_NAME = "content.txt";                                      // файл для сохранения информации о группе
     private final static String FILE_NAME_SETTINGS = "settings.txt";
     private Cell time1;                                                                         // Ячейка для чтения с экселя(время)
